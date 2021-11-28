@@ -63,4 +63,4 @@ Try openning your httpd.conf file and ensure you have the following settings:
 AccessFileName .htaccess
 ```
 __Solution 2__ <br>
-(Workaround) Include `index.php` in your POST request: `[API_LOCATION]/index.php/api/weather/office/forecast`# weather-api
+(Workaround) Include `index.php` in your POST request: `[API_LOCATION]/index.php/api/weather/office/forecast`
