@@ -34,15 +34,16 @@ private $db_host = 'localhost';
 
 
 ## Sending API Requests
-Send a POST request to the URL of your API installation: `[API_LOCATION]/api/weather/office/forecast`.
+Send a POST request to the URL of your API installation: `{API_URL}/api/weather/office/forecast`. (ex: `http://localhost:8888/weather-api/api/office/forecast`)
 
-You must include `X-Api-Token: [TOKEN_ID]` in your header or you will get a 401 unauthorized missing token error.
+You must include `X-Api-Token: {TOKEN_ID}` in your header or you will get a 401 unauthorized missing token error.
 
 If the API token provided does not exist in the database, you will also get a 401 unauthorized error.
 
-__Send request in terminal using curl__:
+### Send request in terminal using curl
+*Replace `{API_URL}` in the command below with the URL to the directory the API is in*
 ```console
-curl -H "X-Api-Token: QkgAVGXuebE9beJEV6iaMKRWf4eDAtALwi9FibuXvR37HYqEJuQKmVdv9eUEyx88" [API_LOCATION]/api/weather/office/forecast --head
+curl -H "X-Api-Token: QkgAVGXuebE9beJEV6iaMKRWf4eDAtALwi9FibuXvR37HYqEJuQKmVdv9eUEyx88" {API_URL}/api/weather/office/forecast --head
 ```
 executing the above command in your terminal will display the response data followed by the headers from your request.
 
@@ -63,4 +64,4 @@ Try openning your httpd.conf file and ensure you have the following settings:
 AccessFileName .htaccess
 ```
 __Solution 2__ <br>
-(Workaround) Include `index.php` in your POST request: `[API_LOCATION]/index.php/api/weather/office/forecast`
+(Workaround) Include `index.php` in your POST request: `{API_URL}/index.php/api/weather/office/forecast`
