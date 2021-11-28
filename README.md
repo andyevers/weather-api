@@ -34,7 +34,7 @@ private $db_host = 'localhost';
 
 
 ## Sending API Requests
-Send a POST request to the URL of your API installation: `{API_URL}/api/weather/office/forecast`. (ex: `http://localhost:8888/weather-api/api/office/forecast`)
+Send a POST request to the URL of your API installation: `{API_URL}/api/weather/office/forecast`. (ex: `http://localhost:8888/weather-api/api/weather/office/forecast`)
 
 You must include `X-Api-Token: {TOKEN_ID}` in your header or you will get a 401 unauthorized missing token error.
 
