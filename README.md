@@ -2,9 +2,9 @@
 Accepts requests to endpoint "/api/weather/office/forecast" and communicates with weather.gov API to get forecast data. 
 
 
-## API Installation
+## API Setup
 1. Create a directory on your server where you want to host the API. (ex: `Applications/MAMP/htdocs/weather-api`).
-2. Install the project files. Open a terminal in your empty directory and run the command: 
+2. Add the API files to your empty directory. Open a terminal in your empty directory and run the command: 
 ```console
 git clone https://github.com/andyevers/weather-api .
 ```
